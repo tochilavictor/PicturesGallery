@@ -4,8 +4,17 @@
 @{
     ViewBag.Title = "Index";
 }
-
 @Html.Partial("_Images",Model.Filenames)
+@using (Html.BeginForm("UploadFile", "Image", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div>
+        <label for="file">Upload your image</label>
+        <input type="file" name="file" id="file" accept=".jpg, .jpeg, .png" />
+    </div>
+    <div>
+        <input type="submit" value="Upload" />
+    </div>
+}
 <div class="pager">
     @Html.PageLinks(Model.PagingInfo, x => @Url.Action("Index", new { page = x}))
 </div>

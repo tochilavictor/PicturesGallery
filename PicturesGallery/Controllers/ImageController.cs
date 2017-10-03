@@ -29,6 +29,17 @@ namespace PicturesGallery.Controllers
             model.PagingInfo = a;
             return View(model);
         }
+        [HttpPost]
+        public ActionResult UploadFile(HttpPostedFileBase file)
+        {
+            string fileName = Guid.NewGuid().ToString();
+            string extension = Path.GetExtension(file.FileName);
+            fileName += extension;
+            file.SaveAs(Server.MapPath("/Content/Images/" + fileName));
+            DirectoryInfo d = new DirectoryInfo(Server.MapPath("~/Content/Images/"));
+            PagingInfo pi = new PagingInfo { ItemsPerPage = pagesize, TotalItems = d.GetFiles("*.jpg").Count() };
+            return RedirectToAction("Index", new {page = pi.TotalPages });
+        }
         //public ActionResult DisplayAvatar(string id)
         //{
         //    if (id == null)

@@ -205,7 +205,6 @@
     <Content Include="Content\Images\zatmenie_nebo_luna_oblaka_117343_1920x1080 - Copy.jpg" />
     <Content Include="Content\Images\zatmenie_nebo_luna_oblaka_117343_1920x1080.jpg" />
     <Content Include="Content\Images\zvezdnoe_nebo_zvezdy_nebo_noch_117409_1920x1080 - Copy.jpg" />
-    <Content Include="Content\Images\zvezdnoe_nebo_zvezdy_nebo_noch_117409_1920x1080.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
