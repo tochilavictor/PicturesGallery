@@ -12,6 +12,10 @@ namespace PicturesGallery.Controllers
     public class ImageController : Controller
     {
         private readonly int pagesize = 4;
+        public ActionResult AAA()
+        {
+            return View();
+        }
         public ActionResult Index(int page = 1)
         {
             DirectoryInfo d = new DirectoryInfo(Server.MapPath("~/Content/Images/"));

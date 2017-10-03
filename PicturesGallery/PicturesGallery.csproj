@@ -198,6 +198,7 @@
     <Content Include="Content\Images\tajvan_zdaniya_stroeniya_gorod_117478_1920x1080.jpg" />
     <Content Include="Content\Images\tsvetok_buton_lepestki_117444_1920x1080.jpg" />
     <Content Include="Content\Images\tsvety_vetki_tsvetenie_117474_1920x1080.jpg" />
+    <Content Include="Content\Images\tykva_ovoshchi_osen_117495_602x339.jpg" />
     <Content Include="Content\Images\vodopad_techenie_kamni_117367_1920x1080.jpg" />
     <Content Include="Content\Images\yabloko_ruka_frukt_117436_1920x1080.jpg" />
     <Content Include="Content\Images\zakat_nebo_vozvyshennosti_117374_1920x1080 - Copy.jpg" />
@@ -205,6 +206,9 @@
     <Content Include="Content\Images\zatmenie_nebo_luna_oblaka_117343_1920x1080 - Copy.jpg" />
     <Content Include="Content\Images\zatmenie_nebo_luna_oblaka_117343_1920x1080.jpg" />
     <Content Include="Content\Images\zvezdnoe_nebo_zvezdy_nebo_noch_117409_1920x1080 - Copy.jpg" />
+    <Content Include="Content\jquery.lightbox-0.5.css" />
+    <Content Include="Content\tykva_ovoshchi_osen_117495_300x188.jpg" />
+    <Content Include="Content\tykva_ovoshchi_osen_117495_602x339.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -219,7 +223,11 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\jquery.lightbox-0.5.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -244,6 +252,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Images.cshtml" />
     <Content Include="Views\Image\Index.cshtml" />
+    <Content Include="Views\Image\AAA.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

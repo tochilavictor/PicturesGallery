@@ -1,11 +1,12 @@
 ﻿@model IEnumerable<string>
+
 <div class="container" style="background-color:aliceblue">
     <div class="row">
         <div class="text-center">
             @foreach (var item in Model)
             {
                 <div class="col-md-5 col-sm-10" style="border: 1px solid #ccc;margin:20px 30px 20px; background-color:cadetblue">
-                    <img class="img-responsive" src="~/Content/Images/@item" style="padding:10px" />
+                   <a class="gallerylink" href="~/Content/Images/@item"><img class="img-responsive" src="~/Content/Images/@item" style="padding:10px" /></a> 
                     <div class="text-center">
                         @item
                     </div>
@@ -14,6 +15,5 @@
         </div>
     </div>
 </div>
-
 
 

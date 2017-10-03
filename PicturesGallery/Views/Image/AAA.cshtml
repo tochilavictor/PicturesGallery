@@ -1,0 +1,32 @@
+﻿
+@{
+//Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AAA</title>
+    <link href="~/Content/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script src="~/Scripts/jquery.lightbox-0.5.js"></script>
+    <script>
+        jQuery(function () {
+            jQuery("li a").lightBox();
+        });
+    </script>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li><a href="~/Content/tykva_ovoshchi_osen_117495_602x339.jpg"><img src="~/Content/tykva_ovoshchi_osen_117495_300x188.jpg" height="113px" width="150px" alt="" /></a></li>
+            <li><a href="~/Content/tykva_ovoshchi_osen_117495_602x339.jpg"><img src="~/Content/tykva_ovoshchi_osen_117495_300x188.jpg" height="113px" width="150px" alt="" /></a></li>
+            <li><a href="~/Content/tykva_ovoshchi_osen_117495_602x339.jpg"><img src="~/Content/tykva_ovoshchi_osen_117495_300x188.jpg" height="113px" width="150px" alt="" /></a></li>
+        </ul>
+    </div>
+    <br />
+    @Html.Partial("_Images");
+</body>
+</html>
