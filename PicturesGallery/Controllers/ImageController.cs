@@ -15,14 +15,19 @@ namespace PicturesGallery.Controllers
         public ActionResult Index(int page = 1)
         {
             DirectoryInfo d = new DirectoryInfo(Server.MapPath("~/Content/Images/"));
-            FileInfo[] Files = d.GetFiles("*.jpg");
-            IEnumerable<GalleryViewModel> names = Files.OrderBy(x => x.CreationTime)
+            FileInfo[] files = d.GetFiles("*.jpg");
+            var model = new GalleryViewModel();
+            model.Filenames = files.OrderBy(x => x.CreationTime)
                 .Skip((page - 1) * pagesize).Take(pagesize)
-                .Select(x => new GalleryViewModel
-                {
-                    Filename = x.Name
-                });
-            return View(names);
+                .Select(x => x.Name);
+            var a = new PagingInfo
+            {
+                CurrentPage = page,
+                ItemsPerPage = pagesize,
+                TotalItems = files.Count()
+            };
+            model.PagingInfo = a;
+            return View(model);
         }
         //public ActionResult DisplayAvatar(string id)
         //{

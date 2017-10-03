@@ -7,6 +7,7 @@ namespace PicturesGallery.Models
 {
     public class GalleryViewModel
     {
-        public string Filename { get; set; }
+        public IEnumerable<string> Filenames { get; set; }
+        public PagingInfo PagingInfo { get; set; }
     }
 }
